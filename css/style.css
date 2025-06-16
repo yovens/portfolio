@@ -10,6 +10,7 @@ body.bg-home {
   background-size: 400% 400%;
   animation: bgScroll 20s ease infinite;
   color: #fff;
+  
   }
   
   body.bg-about {
@@ -68,12 +69,14 @@ body.bg-home {
   
   .nav-link:hover {
     color: #f1c40f !important;
-    transition: color 0.3s;
+    
+     transition: color 0.3s ease;
   }
   
   /* ------ BOUTON PERSONNALISÉ ------ */
   .btn-primary {
-    background-color: #007bff;
+    
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
     border: none;
     border-radius: 0.5rem;
     font-weight: 500;
@@ -81,7 +84,8 @@ body.bg-home {
   }
   
   .btn-primary:hover {
-    background-color: #0056b3;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+      transform: translateY(-2px) scale(1.03);
   }
   
   /* ------ ESPACEMENT GLOBAL ------ */
@@ -145,3 +149,42 @@ body.bg-home {
     color: #f8f9fa !important;
   }
   
+
+
+.about-img {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  animation-delay: 0.3s;
+}
+
+.about-img:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.about-home h2 {
+  color: #f1c40f;
+  font-size: 2.5rem;
+}
+
+.about-home .timeline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-home .timeline li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-home .timeline li::before {
+  content: "⏺";
+  position: absolute;
+  left: 0;
+  color: #a43931;
+}
+
+
+    
